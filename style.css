@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background-color: rgb(75, 63, 247);
+    height: 90px;
+    width: 100%;
+}
+label.logo{
+    color: aliceblue;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    letter-spacing:4px;
+    text-shadow: 2.5px 2.5px rgb(37, 36, 36);
+}
+nav ul{
+    float: right;
+    margin: 5px;
+    padding-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 2px;
+    
+}
+nav ul li a{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+a.home,a:hover{
+    background-color: #1b9bff ;
+    transition: .5s;
+}
+.marque{
+    color: rgb(91, 91, 232);
+    font-size: 20px;
+    padding: 2px 0px;
+    top: 0;
+    position: sticky;
+}
+#add-section>img{
+    width: 100%;
+   aspect-ratio: 3/1.5;
+}
+
+.car{
+    width: 450px;
+    background-color: rgb(91, 91, 255);
+    border-radius: 5px;
+    text-align: justify;
+    position: relative;
+    padding: 15px;
+    margin: 25px;
+    float: left;
+    top: -50px;
+    transition : all .5s linear;
+    z-index: 7;
+}
+.car>p{
+    color: azure;
+}
+.car>h3{
+    text-align: center;
+}
+.car:hover
+{
+  top: -120px;
+}
+section h1{
+    text-align: center;
+}
+.car-card{
+    width: 280px;
+    text-align: center;
+    background-color: #1b9bff;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+button{
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.shopnow{
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(78, 78, 255);
+    text-decoration: underline;
+}
+.wrapper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
