@@ -21,6 +21,13 @@ label.logo{
     font-weight: bold;
     letter-spacing:4px;
     text-shadow: 2.5px 2.5px rgb(37, 36, 36);
+    height: 15px;
+    width: 15px;
+}
+label.logo:hover{
+        color: red;
+        height: 20px;
+        width: 20px;
 }
 nav ul{
     float: right;
@@ -35,14 +42,18 @@ nav ul li{
 }
 nav ul li a{
     color: aliceblue;
+    background-color: rgb(7, 7, 7);
     font-size: 20px;
     padding: 7px 13px;
     border-radius: 5px;
     text-transform: uppercase;
+    transform: scaleX(0)
 }
 a.home,a:hover{
     background-color: #1b9bff ;
     transition: .5s;
+    text-decoration: underline;
+    transform: scaleX(1);
 }
 .marque{
     color: rgb(91, 91, 232);
@@ -50,6 +61,7 @@ a.home,a:hover{
     padding: 2px 0px;
     top: 0;
     position: sticky;
+    z-index: 500;
 }
 #add-section>img{
     width: 100%;
@@ -59,15 +71,19 @@ a.home,a:hover{
 .car{
     width: 450px;
     background-color: rgb(91, 91, 255);
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: justify;
     position: relative;
     padding: 15px;
     margin: 25px;
     float: left;
-    top: -50px;
     transition : all .5s linear;
-    z-index: 7;
+    bottom: -0px;
+}
+.car:hover
+{
+  bottom: -40px;
+  background-color: rgb(0, 26, 17);
 }
 .car>p{
     color: azure;
@@ -75,12 +91,23 @@ a.home,a:hover{
 .car>h3{
     text-align: center;
 }
-.car:hover
-{
-  top: -120px;
-}
+
 section h1{
     text-align: center;
+}
+.wrapper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition : all .5s linear;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.wrapper-div :hover{
+    bottom: -35px;
+    transition : all .5s linear;
+
 }
 .car-card{
     width: 280px;
@@ -89,7 +116,12 @@ section h1{
     margin-left: 20px;
     padding: 10px;
     border-radius: 10px;
+    bottom: -0px;
+    padding: 15px;
+    margin: 25px;
+    position: relative;
 }
+
 button{
     width: 100%;
     background-color: black;
@@ -98,21 +130,18 @@ button{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition : all .5s linear;
+}
+button:hover{
+    background-color: red;
+    text-decoration: underline;
 }
 .shopnow{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 30px;
     background-color: rgb(78, 78, 255);
     text-decoration: underline;
-}
-.wrapper-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+
 }
